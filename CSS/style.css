@@ -299,3 +299,7 @@ header img {
     font-size: 1.7em;
     margin: 0.1em 0 -1.01em;
 }
+footer{
+    background-color: black;
+    text-shadow: 0px -6px 10px black;
+}
