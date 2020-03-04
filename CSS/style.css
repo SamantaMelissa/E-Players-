@@ -222,3 +222,80 @@ header img {
 .texto_sobre h2 {
     margin-bottom: 2em;
 }
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+
+.content section {
+    width: 70%;
+}
+
+
+.card {
+    width: 100%;
+    box-shadow: 0px 3px 10px #000;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
+  
+}
+
+.card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.card div {
+    padding: 2em;
+}
+
+
+/* para aparecer a mãozinha no bagulho usamos: */ .card div:hover {
+    color: var(--background);
+    background-color: var(--purple);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.content h3 { 
+    text-transform: uppercase;
+    padding: 1em 0;
+    font-size: 1.8em;
+}
+
+.content article {
+    width: 25%;
+}
+
+.resultadosBox {
+    box-shadow:  0px 3px 10px #000;
+    padding: 2em;
+}
+
+.resultado div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.resultado{
+    text-align: center;
+    margin-bottom: 4.17em;
+}
+
+.resultado img {
+    width: 30px;
+}
+.resultado p{
+    font-size: 1.7em;
+    margin: 0.1em 0 -1.01em;
+}
