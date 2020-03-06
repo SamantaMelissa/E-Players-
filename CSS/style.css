@@ -487,6 +487,18 @@ select{
     margin: 2em auto;
 } 
 
+header .fa-bars {
+    /*para apagar*/
+    display: none;
+}
+
+
+
+
+
+
+
+
 /*inicio-Responsividade*/
 /*1200px*/
 
@@ -566,9 +578,71 @@ select{
         margin-top: 0.5em;
         
     }
-
-
 }
 /*fim mídia Query 1200px*/
 
 
+
+
+
+@media(max-width: 460px) {
+    header .fa-bars {
+        color: var(--purple);
+        font-size: 3em;
+        /* para aparecer*/
+        display: block;
+    }
+
+
+    header .container div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    header .container div a {
+        margin-left: 7em;
+    }
+
+    #menu {
+        position: absolute;
+        top: 5.5em;
+        width: 100%;
+        left: 0;
+        background-color: var(--purple);
+    }
+
+    #menu ul {
+        flex-direction: column;
+        height: 295px;
+        margin-left: 1em;
+    
+    }
+
+
+    #menu a {
+        display: block;
+        padding: 0.5em 0;
+       
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/*fim mídia Query 460px*/

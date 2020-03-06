@@ -15,10 +15,17 @@
 
     <header>
         <div class="container">
-            <a href="index.html" title="Acessar a página inicial do site">
-                <img src="img/Logo.svg" alt="Logo do site E-Players ">
-            </a>
-            <nav>
+
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"> </i>
+                </a>
+               
+                <a href="index.html" title="Acessar a página inicial do site">
+                    <img src="img/Logo.svg" alt="Logo do site E-Players ">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title=" Acessar página inicial">início</a></li>
                     <!-- /*se for criar uma página*/ -->
@@ -390,6 +397,30 @@
         </div><!-- fim container -->
         <p> &copy; COPYRIGHT Todos os direitos reservados -SENAI de Informática - E-Sports </p>
     </footer>
+
+
+
+
+    <!-- COMO FAZER UMA SCRIPT  -->
+
+    <script>
+
+        function botaoMenu() {
+            var m = document.getElementById("menu");
+            if(m.style.display == "block"){
+            m.style.display = "none";
+
+            }else {
+                m.style.display = "block";
+            }
+        }
+
+
+
+
+
+
+    </script>
 
 
 
