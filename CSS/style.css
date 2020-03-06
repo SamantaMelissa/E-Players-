@@ -93,11 +93,20 @@ header img {
 
 .partidas .container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
     flex-flow: wrap;
 
 }
+
+.proximas-partidas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
 .partida {
     padding: 0 0 10px 0;
 }
@@ -204,7 +213,7 @@ header img {
     position: absolute;
     z-index: 99 ; /* coloca a imagem pra frente */
     top: -20px;
-    left: 100px;
+    left: 300px;
     width: 100%;
     max-width: 35%;
 }
@@ -473,8 +482,74 @@ select{
     margin: auto;
 }
 
-.FormCadastro .campo:nth-last-child(10) button {
-    margin: auto
+.FormCadastro .campo:nth-last-child(n) button {
+    /* Dentro do formulário cadastro, quero pegar o filho número 10, mas quero configurar o botão que está no filho dele  */
+    margin: 2em auto;
 } 
-/* Dentro do formulário cadastro, quero pegar o filho número 10, mas quero configurar o botão que está no filho dele  */
+
+/*inicio-Responsividade*/
+/*1200px*/
+
+
+@media(max-width: 1200px)  /* analisar o tamanho da mídia */ {
+    .container {
+        width: 90%;
+    }
+
+    header .container img {
+        max-width: 180px;
+    }
+
+    .partidas .container {
+        align-items: flex-start;
+        flex-flow: nowrap; /* não quero que quebre */
+    }
+
+    .emAndamento {
+        width: 30%;
+      
+    }
+
+    .proximas-partidas {
+        width: 70%;
+        flex-flow: wrap;
+    }
+
+    .ligas h4 {
+        font-size: 30px;
+    }
+
+
+    .ligas h3 {
+        font-size: 60px;
+    }
+
+    .ligas img {
+        height: 90px;
+    }
+
+    .sobre img {
+        max-width: 50%;
+        left: 20px;
+        margin-top: 120px;
+    }
+
+    .texto_sobre {
+        width: 50%;
+        margin-right: 30px;
+
+    }
+    
+    .content {
+        margin-top: 30px ;
+    }
+
+
+    
+
+
+
+}
+/*fim mídia Query 1200px*/
+
 
