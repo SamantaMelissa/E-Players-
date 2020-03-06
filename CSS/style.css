@@ -493,7 +493,7 @@ select{
 
 @media(max-width: 1200px)  /* analisar o tamanho da mídia */ {
     .container {
-        width: 90%;
+        width: 95%;
     }
 
     header .container img {
@@ -507,6 +507,7 @@ select{
 
     .emAndamento {
         width: 30%;
+        margin-top: 40px;
       
     }
 
@@ -531,12 +532,13 @@ select{
     .sobre img {
         max-width: 50%;
         left: 20px;
-        margin-top: 120px;
+        margin-top: 200px;
     }
 
     .texto_sobre {
         width: 50%;
-        margin-right: 30px;
+        margin-right: 30px; 
+        margin-top: -120px;
 
     }
     
@@ -544,9 +546,26 @@ select{
         margin-top: 30px ;
     }
 
+    .card img {
+        margin-top: 2.5em;
+        margin-left: 1em;
+    }
 
-    
+    .resultado p {
+        margin-top: 0.5em;
+    }
 
+    div .sociais {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        justify-content: space-evenly;
+    }
+
+    div .logoRodape {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        
+    }
 
 
 }
